@@ -11,7 +11,7 @@ public class Central
     public void anadirChurrasqueria(Churrasqueria c)
     {
         listaChurrasqueria.add(c);
-    }
+    } 
     public void anadirChifa(Chifa chifa)
     {
         listaChifa.add(chifa);

@@ -1,18 +1,11 @@
 
-public class Churrasqueria
+public class Churrasqueria extends Local
 {
-    private String nombre;
-    private String direccion;
-    private String platoNombre;
-    private int platoPrecio;
-    private int cantidadPlatosDisponibles;
     private double chicha;
     private double guarapo;
     public Churrasqueria(String nombre, String direccion)
     {
-        this.nombre = nombre;
-        this.direccion = direccion;
-        cantidadPlatosDisponibles = 200;
+        super(nombre,direccion);
         chicha = 150.0;
         guarapo = 100.0;
     }
@@ -24,14 +17,15 @@ public class Churrasqueria
     }
     public void informacion()
     {
-        System.out.println("El nombre de la chifa es :"+getNombre());
+        System.out.println("El nombre de la churrasqueria es :"+getNombre());
         System.out.println("Su direccion "+ getDireccion());
         System.out.println("La cantidad de platos que posee "+cantidadPlatosDisponibles());
         System.out.println("####################");
     }
+    
     public void venderPlato()
     {
-        cantidadPlatosDisponibles--;
+        super.cantidadPlatosDisponibles--;
     }
     public String getDireccion()
     {

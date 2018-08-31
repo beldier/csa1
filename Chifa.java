@@ -1,59 +1,27 @@
 
-public class Chifa
+public class Chifa extends Local
 {
-    private String nombre;
-    private String direccion;
-    private String platoNombre;
-    private int platoPrecio;
-    private int cantidadPlatosDisponibles;
+    
+    private int galletasSuerte;
     public Chifa(String nombre, String direccion)
     {
-        this.nombre = nombre;
-        this.direccion = direccion;
-        cantidadPlatosDisponibles = 200;
+        super(nombre,direccion);
+        galletasSuerte = 100;
     }
     public void informacion()
     {
         System.out.println("El nombre de la chifa es :"+getNombre());
         System.out.println("Su direccion "+ getDireccion());
-        System.out.println("La cantidad de platos que posee "+cantidadPlatosDisponibles());
+        System.out.println("La cantidad de galletas especiales que tiene es "+galletasSuerte);
         System.out.println("####################");
     }
     public void venderPlato()
     {
-        cantidadPlatosDisponibles--;
+        super.cantidadPlatosDisponibles--;
     }
-    public String getDireccion()
+    public void cantidadGalletas(int cantidad)
     {
-        return direccion;
-    }
-    public String getNombre()
-    {
-        return nombre;
-    }
-    public String getPlato()
-    {
-        return platoNombre;
-    }
-    public int cantidadPlatosDisponibles()
-    {
-        return cantidadPlatosDisponibles;
-    }
-    public void setPlatoNombre(String nombre)
-    {
-        platoNombre = nombre;
-    }
-    public void setPlatoPrecio(int precio)
-    {
-        platoPrecio = precio;
-    }
-    public String getPlatoNombre()
-    {
-        return platoNombre;
-    }
-    public int getPlatoPrecio()
-    {
-        return platoPrecio;
+        galletasSuerte-= cantidad;
     }
     
 }
