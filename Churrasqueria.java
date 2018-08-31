@@ -15,14 +15,7 @@ public class Churrasqueria extends Local
     public void servirGuarapo(double pedido){
         guarapo-= pedido;
     }
-    public void informacion()
-    {
-        System.out.println("El nombre de la churrasqueria es :"+getNombre());
-        System.out.println("Su direccion "+ getDireccion());
-        System.out.println("La cantidad de platos que posee "+cantidadPlatosDisponibles());
-        System.out.println("####################");
-    }
-    
+
     public void venderPlato()
     {
         super.cantidadPlatosDisponibles--;
@@ -59,5 +52,6 @@ public class Churrasqueria extends Local
     {
         return platoPrecio;
     }
+
 
 }

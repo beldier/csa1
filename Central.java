@@ -1,30 +1,18 @@
 import java.util.ArrayList;
 public class Central
 {
-    private ArrayList<Chifa> listaChifa;
-    private ArrayList<Churrasqueria> listaChurrasqueria;
+    private ArrayList<Local> listaLocal;
     public Central()
     {
-        listaChifa = new ArrayList<Chifa>();
-        listaChurrasqueria = new ArrayList<Churrasqueria>();
+        listaLocal=new ArrayList<Local>();
     }
-    public void anadirChurrasqueria(Churrasqueria c)
+    public void anadirLocal(Local c)
     {
-        listaChurrasqueria.add(c);
+        listaLocal.add(c);
     } 
-    public void anadirChifa(Chifa chifa)
-    {
-        listaChifa.add(chifa);
-    }
     public void imprimirChifas()
     {
-        for(Chifa c : listaChifa)
+        for(Local c : listaLocal)
             c.informacion();
     }
-    public void imprimirChurrasquerias()
-    {
-        for(Churrasqueria c : listaChurrasqueria)
-            c.informacion();
-    }
-
 }
