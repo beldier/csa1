@@ -1,7 +1,6 @@
 
-public class Chifa extends Local
+public class Chifa extends Local implements Comparable<Chifa>
 {
-    
     private int galletasSuerte;
     public Chifa(String nombre, String direccion)
     {
@@ -19,9 +18,25 @@ public class Chifa extends Local
     {
         super.cantidadPlatosDisponibles--;
     }
+    public int getCantidadGalletas()
+    {
+        return galletasSuerte;
+    }
     public void cantidadGalletas(int cantidad)
     {
         galletasSuerte-= cantidad;
+    }
+     public int compareTo(Chifa f)
+    {       
+        int ans=-1;
+        if(galletasSuerte==f.getCantidadGalletas())
+            ans=0;
+        else
+            if(galletasSuerte<f.getCantidadGalletas())
+                ans=-1;
+            else
+                ans=1;
+        return ans;
     }
     
 }

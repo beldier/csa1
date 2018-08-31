@@ -5,7 +5,7 @@
  * @author (your name)
  * @version (a version number or a date)
  */
-public class Local
+public abstract class Local
 {
     protected String nombre;
     protected String direccion;
@@ -53,9 +53,6 @@ public class Local
     {
         return platoPrecio;
     }
-    public void informacion()
-    {
-        System.out.println("El nombre del local es :"+getNombre());
-        System.out.println("####################");
-    }
+    public abstract void informacion();
+
 }

@@ -52,6 +52,9 @@ public class Churrasqueria extends Local
     {
         return platoPrecio;
     }
-
+    public void informacion()
+    {
+        System.out.println("dasdadasd");
+    }
 
 }
