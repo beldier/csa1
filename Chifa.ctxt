@@ -1,0 +1,23 @@
+#BlueJ class context
+comment0.target=Chifa
+comment1.params=nombre\ direccion
+comment1.target=Chifa(java.lang.String,\ java.lang.String)
+comment10.params=
+comment10.target=int\ getPlatoPrecio()
+comment2.params=
+comment2.target=void\ venderPlato()
+comment3.params=
+comment3.target=java.lang.String\ getDireccion()
+comment4.params=
+comment4.target=java.lang.String\ getNombre()
+comment5.params=
+comment5.target=java.lang.String\ getPlato()
+comment6.params=
+comment6.target=int\ cantidadPlatosDisponibles()
+comment7.params=nombre
+comment7.target=void\ setPlatoNombre(java.lang.String)
+comment8.params=precio
+comment8.target=void\ setPlatoPrecio(int)
+comment9.params=
+comment9.target=java.lang.String\ getPlatoNombre()
+numComments=11

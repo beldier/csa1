@@ -1,0 +1,9 @@
+#BlueJ class context
+comment0.target=Central
+comment1.params=
+comment1.target=Central()
+comment2.params=chifa
+comment2.target=void\ anadirChifa(Chifa)
+comment3.params=
+comment3.target=void\ imprimirChifas()
+numComments=4
