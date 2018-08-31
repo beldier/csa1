@@ -2,8 +2,12 @@
 comment0.target=Central
 comment1.params=
 comment1.target=Central()
-comment2.params=chifa
-comment2.target=void\ anadirChifa(Chifa)
-comment3.params=
-comment3.target=void\ imprimirChifas()
-numComments=4
+comment2.params=c
+comment2.target=void\ anadirChurrasqueria(Churrasqueria)
+comment3.params=chifa
+comment3.target=void\ anadirChifa(Chifa)
+comment4.params=
+comment4.target=void\ imprimirChifas()
+comment5.params=
+comment5.target=void\ imprimirChurrasquerias()
+numComments=6
