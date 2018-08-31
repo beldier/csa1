@@ -13,10 +13,8 @@ public class Central
     public void imprimirChifas()
     {
         for(Chifa c : listaChifa){
-            System.out.println("El nombre de la chifa es :"+c.getNombre());
-            System.out.println("Su direccion "+c.getDireccion());
-            System.out.println("La cantidad de platos que posee "+c.cantidadPlatosDisponibles());
-            System.out.println("####################");
+            c.informacion();
         }
     }
+
 }

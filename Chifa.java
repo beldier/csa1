@@ -12,6 +12,13 @@ public class Chifa
         this.direccion = direccion;
         cantidadPlatosDisponibles = 200;
     }
+    public void informacion()
+    {
+        System.out.println("El nombre de la chifa es :"+getNombre());
+        System.out.println("Su direccion "+ getDireccion());
+        System.out.println("La cantidad de platos que posee "+cantidadPlatosDisponibles());
+        System.out.println("####################");
+    }
     public void venderPlato()
     {
         cantidadPlatosDisponibles--;
