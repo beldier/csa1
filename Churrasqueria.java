@@ -1,5 +1,5 @@
 
-public class Churrasqueria extends Local
+public class Churrasqueria extends Local implements Comparable<Churrasqueria>
 {
     private double chicha;
     private double guarapo;
@@ -8,6 +8,7 @@ public class Churrasqueria extends Local
         super(nombre,direccion);
         chicha = 150.0;
         guarapo = 100.0;
+    
     }
     public void servirChicha(double pedido){
         chicha-=pedido;
@@ -15,46 +16,29 @@ public class Churrasqueria extends Local
     public void servirGuarapo(double pedido){
         guarapo-= pedido;
     }
-
+    public double  getChicha()
+    {
+        return chicha;
+    }
     public void venderPlato()
     {
         super.cantidadPlatosDisponibles--;
     }
-    public String getDireccion()
-    {
-        return direccion;
-    }
-    public String getNombre()
-    {
-        return nombre;
-    }
-    public String getPlato()
-    {
-        return platoNombre;
-    }
-    public int cantidadPlatosDisponibles()
-    {
-        return cantidadPlatosDisponibles;
-    }
-    public void setPlatoNombre(String nombre)
-    {
-        platoNombre = nombre;
-    }
-    public void setPlatoPrecio(int precio)
-    {
-        platoPrecio = precio;
-    }
-    public String getPlatoNombre()
-    {
-        return platoNombre;
-    }
-    public int getPlatoPrecio()
-    {
-        return platoPrecio;
-    }
+ 
     public void informacion()
     {
-        System.out.println("dasdadasd");
+        System.out.println("Nombre de churrasqueria: "+ super.getNombre());
     }
-
+    public int compareTo(Churrasqueria local)
+    {
+        int ans =0;
+        if(chicha<local.getChicha())
+            ans=-1;
+        else
+            if(chicha == local.getChicha())
+                ans=0;
+            else
+                ans=1;
+        return ans;
+    }
 }

@@ -2,8 +2,8 @@
 comment0.target=Central
 comment1.params=
 comment1.target=Central()
-comment2.params=c
-comment2.target=void\ anadirLocal(Local)
+comment2.params=l
+comment2.target=void\ anadirChifa(Local)
 comment3.params=
 comment3.target=void\ imprimirChifas()
 numComments=4

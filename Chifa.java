@@ -1,42 +1,58 @@
 
-public class Chifa extends Local implements Comparable<Chifa>
-{
-    private int galletasSuerte;
+public class Chifa
+{ 
+    private String nombre;
+    private String direccion;
+    private String platoNombre;
+    private int platoPrecio;
+    private int cantidadPlatosDisponibles;
+    private int galletaSuerte;
     public Chifa(String nombre, String direccion)
     {
-        super(nombre,direccion);
-        galletasSuerte = 100;
+        this.nombre = nombre;
+        this.direccion = direccion;
+        cantidadPlatosDisponibles = 200;
+        galletaSuerte = 100;
     }
-    public void informacion()
+    public void venderGalletaSuerte(int vender)
     {
-        System.out.println("El nombre de la chifa es :"+getNombre());
-        System.out.println("Su direccion "+ getDireccion());
-        System.out.println("La cantidad de galletas especiales que tiene es "+galletasSuerte);
-        System.out.println("####################");
+        galletaSuerte = galletaSuerte - vender ;
     }
     public void venderPlato()
     {
-        super.cantidadPlatosDisponibles--;
+        cantidadPlatosDisponibles--;
     }
-    public int getCantidadGalletas()
+    public String getDireccion()
     {
-        return galletasSuerte;
+        return direccion;
     }
-    public void cantidadGalletas(int cantidad)
+    public String getNombre()
     {
-        galletasSuerte-= cantidad;
+        return nombre;
     }
-     public int compareTo(Chifa f)
-    {       
-        int ans=-1;
-        if(galletasSuerte==f.getCantidadGalletas())
-            ans=0;
-        else
-            if(galletasSuerte<f.getCantidadGalletas())
-                ans=-1;
-            else
-                ans=1;
-        return ans;
+    public String getPlato()
+    {
+        return platoNombre;
+    }
+    public int cantidadPlatosDisponibles()
+    {
+        return cantidadPlatosDisponibles;
+    }
+    public void setPlatoNombre(String nombre)
+    {
+        platoNombre = nombre;
+    }
+    public void setPlatoPrecio(int precio)
+    {
+        platoPrecio = precio;
+    }
+    public String getPlatoNombre()
+    {
+        return platoNombre;
+    }
+    public int getPlatoPrecio()
+    {
+        return platoPrecio;
     }
     
 }

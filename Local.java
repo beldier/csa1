@@ -1,10 +1,5 @@
 
-/**
- * Write a description of class Local here.
- *
- * @author (your name)
- * @version (a version number or a date)
- */
+
 public abstract class Local
 {
     protected String nombre;
@@ -54,5 +49,6 @@ public abstract class Local
         return platoPrecio;
     }
     public abstract void informacion();
+    
 
 }
